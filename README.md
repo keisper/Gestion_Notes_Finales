@@ -1,2 +1,2 @@
-# Gestion_Notes_Finales
-Application de gestion de notes de l'Institut Saint Jean
+# Gestion_Notes_Final
+Application de gestion des notes de l'Institut Saint Jean

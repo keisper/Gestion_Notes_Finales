@@ -1,0 +1,43 @@
+<html><head>
+  <SCRIPT src="http://java.com/js/dtjava.js"></SCRIPT>
+<script>
+    function launchApplication(jnlpfile) {
+        dtjava.launch(            {
+                url : 'Gestion_Note_Final.jnlp'
+            },
+            {
+                javafx : '8.0+'
+            },
+            {}
+        );
+        return false;
+    }
+</script>
+
+<script>
+    function javafxEmbedGestion_Note_Final_id() {
+        dtjava.embed(
+            {
+                id : 'Gestion_Note_Final_id',
+                url : 'Gestion_Note_Final.jnlp',
+                placeholder : 'javafx-app-placeholder',
+                width : '600',
+                height : '400'
+            },
+            {
+                javafx : '8.0+'
+            },
+            {}
+        );
+    }
+    <!-- Embed FX application into web page once page is loaded -->
+    dtjava.addOnloadCallback(javafxEmbedGestion_Note_Final_id);
+</script>
+
+</head><body>
+<h2>Test page for <b>Gestion_Note_ISJ</b></h2>
+  <b>Webstart:</b> <a href='Gestion_Note_Final.jnlp' onclick="return launchApplication('Gestion_Note_Final.jnlp');">click to launch this app as webstart</a><br><hr><br>
+
+  <!-- Applet will be inserted here -->
+  <div id='javafx-app-placeholder'></div>
+</body></html>
